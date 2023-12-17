@@ -8,8 +8,8 @@ def bubble_sort(arr):
 
 def modified_Bubble_sort(arr):
     n = len(arr)-1
-    flag = False
     for i in range(n):
+        flag = False
         for j in range(n-i):
             if arr[j]>arr[j+1]:
                 arr[j],arr[j+1] =arr[j+1],arr[j]
@@ -18,6 +18,6 @@ def modified_Bubble_sort(arr):
             break
 
 
-arr = [1,7,16,9,8,5,2,1]
+arr = [1,7,16,9,8,5,2]
 modified_Bubble_sort(arr)
 print(arr)
